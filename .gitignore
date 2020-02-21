@@ -1,0 +1,5 @@
+/node_modules
+/packages/agency-blog
+/packages/image-blog
+/packages/modern-agency
+/packages/**/node_modules
