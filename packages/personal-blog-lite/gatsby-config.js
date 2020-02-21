@@ -4,18 +4,16 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `StoryHub`,
-    author: `David`,
-    about: `Breakfast procuring no end happiness allowance assurance frank. Met simplicity nor difficulty unreserved who. Entreaties mr conviction dissimilar me
-    astonished estimating cultivated.`,
-    description: `A Gatsby Blog`,
-    siteUrl: `https://storyhub-minimal-tarex.redq.now.sh`,
+    title: `Forestone blog | フォレストーン ブログ`,
+    author: `Chiba Takumi`,
+    about: `株式会社Forestone 代表取締役社長/フロントエンジニア/デザイナー 全く別軸で移動販売車を購入してカフェを始めました。「Cafe More」というお店です。1号店・2号店絶賛営業中。趣味は音楽で、朝まで踊れる程度には好きです。DJも、たまにやります`,
+    description: `デザイン・プログラミング・ガジェット・動画編集など雑多に忘備録`,
+    siteUrl: `https://blog.fores-tone.co.jp`,
   },
-  plugins: [
-    {
+  plugins: [{
       resolve: `gatsby-plugin-styled-components`,
       options: {
-        minify: false, // Breaks styles if not set to false
+        minify: true, // Breaks styles if not set to false
       },
     },
     {
@@ -35,8 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          {
+        plugins: [{
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
@@ -117,8 +114,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        fonts: [
-          {
+        fonts: [{
             family: `Poppins`,
             variants: [`300`, `400`, `500`, `600`, `700`],
           },
