@@ -3,3 +3,4 @@
 /packages/image-blog
 /packages/modern-agency
 /packages/**/node_modules
+/packages/**/hosting.*

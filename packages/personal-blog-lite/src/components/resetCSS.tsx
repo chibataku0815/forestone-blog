@@ -51,7 +51,7 @@ const ResetCSS = createGlobalStyle`
   }
 
   body {
-    font-family: 'Fira Sans',sans-serif;
+    font-family: 'Poppins','Helvetica Neue',sans-serif;
     margin: 0;
     padding: 0;
     font-size: 15px;
@@ -63,8 +63,8 @@ const ResetCSS = createGlobalStyle`
     line-height: 2;
     margin: 0 0 1.7em 0;
   }
-  
-  input, textarea, select, button{font-family: 'Fira Sans',sans-serif;}
+
+  input, textarea, select, button{font-family: 'Helvetica Neue',sans-serif;}
 
   ul,ol {
     margin: 0;
@@ -138,7 +138,7 @@ const ResetCSS = createGlobalStyle`
         }
       }
     }
-    
+
   }
 
 `

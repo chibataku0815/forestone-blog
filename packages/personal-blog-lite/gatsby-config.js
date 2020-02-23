@@ -10,7 +10,16 @@ module.exports = {
     description: `デザイン・プログラミング・ガジェット・動画編集など雑多に忘備録`,
     siteUrl: `https://blog.fores-tone.co.jp`,
   },
-  plugins: [{
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Noto+Sans+JP:100,300,400,500,700,900', 'Material+Icons'],
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         minify: true, // Breaks styles if not set to false
@@ -33,7 +42,8 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [{
+        plugins: [
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
@@ -114,13 +124,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        fonts: [{
+        fonts: [
+          {
             family: `Poppins`,
             variants: [`300`, `400`, `500`, `600`, `700`],
           },
           {
-            family: `Fira Sans`,
+            family: `Helvetica Neue`,
             variants: [`100`, `300`, `400`, `500`, `600`, `700`],
+          },
+          {
+            family: `Noto+Sans+JP`,
+            variants: [`100`, `300`, `400`, `500`, `700`, `900`],
           },
         ],
       },

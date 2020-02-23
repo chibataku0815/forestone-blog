@@ -26,8 +26,24 @@ const MenuItems = [
     url: "/",
   },
   {
-    label: "About",
-    url: "/about",
+    label: "Youtube",
+    url: "https://www.youtube.com/channel/UC_tPaIUSiGSPYOK4Qsvt1wA",
+    target: "_blank",
+  },
+  {
+    label: "Twiiter",
+    url: "https://twitter.com/forestone0901",
+    target: "_blank",
+  },
+  {
+    label: "Facebook",
+    url: "https://www.facebook.com/chibatakumi",
+    target: "_blank",
+  },
+  {
+    label: "Instagram",
+    url: "https://www.instagram.com/chibataku0815",
+    target: "_blank",
   },
   {
     label: "Contact",
@@ -67,7 +83,8 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({
         </DrawerProvider>
         <Logo>
           <Link to="/">
-            <img src={LogoImage} alt="logo" />
+            Forestone
+            {/* <img src={LogoImage} alt='logo' /> */}
           </Link>
         </Logo>
         <MenuWrapper>

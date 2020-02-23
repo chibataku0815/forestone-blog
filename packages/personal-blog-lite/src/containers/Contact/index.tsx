@@ -17,11 +17,11 @@ interface MyFormValues {
 }
 
 const SignupSchema = Yup.object().shape({
-  firstName: Yup.string().required("Required"),
+  firstName: Yup.string().required("必須項目です"),
   email: Yup.string()
-    .email("Invalid email")
-    .required("Required"),
-  message: Yup.string().required("Required"),
+    .email("メールアドレスの形式が違います")
+    .required("必須項目です"),
+  message: Yup.string().required("必須項目です"),
 })
 
 const Contact: React.SFC<{}> = () => {
@@ -53,10 +53,10 @@ const Contact: React.SFC<{}> = () => {
               <ContactPageTitle>
                 <h2>Contact</h2>
                 <p>
-                  StoryHub theme comes with a contact form built-in. You can use
+                  {/* StoryHub theme comes with a contact form built-in. You can use
                   this form with Gatsbay Js service and get up to 50 submissions
                   for free per form per month. Also, you can easily switch to
-                  another service if you want.
+                  another service if you want. */}
                 </p>
               </ContactPageTitle>
               <ContactFromWrapper>

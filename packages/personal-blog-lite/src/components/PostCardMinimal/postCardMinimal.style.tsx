@@ -85,7 +85,7 @@ export const PostTitle = styled.h2`
   color: ${themeGet("colors.textColor", "#292929")};
   line-height: 1.53;
   margin-bottom: 10px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   a {
     color: ${themeGet("colors.textColor", "#292929")};
   }

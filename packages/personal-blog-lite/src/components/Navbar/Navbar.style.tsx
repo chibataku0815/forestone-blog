@@ -26,18 +26,25 @@ export const NavbarWrapper = styled.div`
 `
 
 export const Logo = styled.div`
+  font-size: 18px;
+  font-weight: bold;
   margin-right: 50px;
   flex-shrink: 0;
+  letter-spacing: 1px;
+
   @media (max-width: 990px) {
     margin: 0 25px;
   }
   @media (max-width: 575px) {
-    max-width: 90px;
+    max-width: 180px;
   }
   img {
     display: block;
     max-width: 100%;
     height: auto;
+  }
+  a {
+    color: #252525;
   }
 `
 
@@ -204,6 +211,13 @@ export const MobileMenuWrapper = styled.div`
 `
 
 export const DrawerContentWrapper = styled.div`
+  .mobile-logo {
+    font-size: 18px;
+    font-weight: bold;
+    flex-shrink: 0;
+    letter-spacing: 1px;
+    color: #252525;
+  }
   .mobile-menu {
     display: block;
     padding-top: 60px;

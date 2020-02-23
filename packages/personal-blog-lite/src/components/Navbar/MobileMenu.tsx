@@ -50,8 +50,9 @@ const MobileMenu: React.FunctionComponent<MobileMenuProps> = ({
         <DrawerContentWrapper>
           <DrawerHead>
             <DrawerLogo>
-              <Link to="/">
-                <img src={logo} alt="logo" />
+              <Link to="/" className="mobile-logo">
+                Forestone
+                {/* <img src={logo} alt="logo" /> */}
               </Link>
             </DrawerLogo>
             <DrawerClose onClick={toggleDrawer}>

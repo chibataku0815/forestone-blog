@@ -54,7 +54,7 @@ export const RelatedPostTitle = styled.h2`
   color: ${themeGet("colors.textColor", "#292929")};
   font-size: 16px;
   font-weight: 500;
-  font-family: ${themeGet("fontFamily.0", "'Fira Sans',sans-serif")};
+  font-family: ${themeGet("fontFamily.0", "'Helvetica Neue',sans-serif")};
   letter-spacing: 0.17em;
   position: relative;
   margin-bottom: 30px;

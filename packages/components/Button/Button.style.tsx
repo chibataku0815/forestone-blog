@@ -14,7 +14,7 @@ const ButtonStyle = styled('button')<ButtonStyleProps>`
   background-color: ${themeGet('colors.black', '#292929')};
   height: ${themeGet('heights.2', '44')}px;
   width: ${props => (props.fullwidth ? '100%' : 'auto')};
-  font-family: ${themeGet('fontFamily.0', "'Fira Sans', sans-serif")};
+  font-family: ${themeGet('fontFamily.0', "'Helvetica Neue', sans-serif")};
   font-size: ${themeGet('fontSizes.3', '15')}px;
   font-weight: ${themeGet('fontWeights.4', '500')};
   text-decoration: none;
