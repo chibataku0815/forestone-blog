@@ -4,3 +4,4 @@
 /packages/modern-agency
 /packages/**/node_modules
 /packages/**/hosting.*
+/packages/**/.env.*

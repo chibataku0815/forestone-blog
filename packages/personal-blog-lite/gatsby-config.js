@@ -4,21 +4,21 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Forestone blog | フォレストーン ブログ`,
+    title: `フォレストーン ブログ`,
     author: `Chiba Takumi`,
     about: `株式会社Forestone 代表取締役社長/フロントエンジニア/デザイナー 全く別軸で移動販売車を購入してカフェを始めました。「Cafe More」というお店です。1号店・2号店絶賛営業中。趣味は音楽で、朝まで踊れる程度には好きです。DJも、たまにやります`,
     description: `デザイン・プログラミング・ガジェット・動画編集など雑多に忘備録`,
     siteUrl: `https://blog.fores-tone.co.jp`,
   },
   plugins: [
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Noto+Sans+JP:100,300,400,500,700,900', 'Material+Icons'],
-        },
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-web-font-loader",
+    //   options: {
+    //     google: {
+    //       families: ["Noto+Sans+JP:100,300,400,500,700,900", "Material+Icons"],
+    //     },
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
@@ -91,7 +91,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `G-0ENG0MYHS0`,
       },
     },
     {
@@ -100,8 +100,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `StoryHub - Personal Blog Minimal`,
-        short_name: `StoryHub`,
+        name: `Forestone - blog`,
+        short_name: `Forestone`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -122,22 +122,29 @@ module.exports = {
       resolve: `gatsby-plugin-lodash`,
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: `Poppins`,
-            variants: [`300`, `400`, `500`, `600`, `700`],
-          },
-          {
-            family: `Helvetica Neue`,
-            variants: [`100`, `300`, `400`, `500`, `600`, `700`],
-          },
-          {
-            family: `Noto+Sans+JP`,
-            variants: [`100`, `300`, `400`, `500`, `700`, `900`],
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: 'Poppins',
+              variants: ['300', '400', '500', '600', '700'],
+              //subsets: ['latin']
+              //text: 'Hello'
+              //fontDisplay: 'swap',
+              //strategy: 'selfHosted' // 'base64' || 'cdn'
+            },
+            {
+              family: 'Noto+Sans+JP',
+              variants: ['100', '300', '400', '500', '600', '700', '900'],
+              fontDisplay: 'swap',
+            },
+          ],
+        },
+        //formats: ['woff2', 'woff'],
+        useMinify: true,
+        usePreload: true,
+        //usePreconnect: false,
       },
     },
   ],

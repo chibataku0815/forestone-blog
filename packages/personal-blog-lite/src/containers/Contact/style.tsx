@@ -44,6 +44,16 @@ export const ContactFromWrapper = styled.div`
       margin-top: 40px;
     }
   }
+
+  .fBEpZS .inner-wrap input,
+  .fBEpZS .inner-wrap textarea,
+  .fBEpZS .inner-wrap input[type="text"],
+  .fBEpZS .inner-wrap input[type="email"],
+  .fBEpZS .inner-wrap input[type="number"],
+  .fBEpZS .inner-wrap input[type="password"] {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
 `
 
 export const InputGroup = styled.div`

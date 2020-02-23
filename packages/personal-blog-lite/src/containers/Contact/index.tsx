@@ -1,28 +1,28 @@
-import * as React from "react"
-import { Formik, FormikActions, FormikProps, Form } from "formik"
-import * as Yup from "yup"
-import Input from "components/Input/Input"
-import Button from "components/Button/Button"
+import * as React from "react";
+import { Formik, FormikActions, FormikProps, Form } from "formik";
+import * as Yup from "yup";
+import Input from "components/Input/Input";
+import Button from "components/Button/Button";
 import {
   ContactWrapper,
   ContactPageTitle,
   ContactFromWrapper,
   InputGroup,
-} from "./style"
+} from "./style";
 
 interface MyFormValues {
-  firstName: string
-  email: string
-  message: string
+  firstName: string;
+  email: string;
+  message: string;
 }
 
 const SignupSchema = Yup.object().shape({
-  firstName: Yup.string().required("必須項目です"),
+  firstName: Yup.string().required("Required/必須項目です"),
   email: Yup.string()
     .email("メールアドレスの形式が違います")
-    .required("必須項目です"),
-  message: Yup.string().required("必須項目です"),
-})
+    .required("Required/必須項目です"),
+  message: Yup.string().required("Required/必須項目です"),
+});
 
 const Contact: React.SFC<{}> = () => {
   return (
@@ -33,8 +33,21 @@ const Contact: React.SFC<{}> = () => {
         actions: FormikActions<MyFormValues>
       ) => {
         setTimeout(() => {
-          console.log({ values, actions })
-          alert(JSON.stringify(values, null, 2))
+          // console.log({ values, actions })
+          // alert(JSON.stringify(values, null, 2))
+          const url = `${process.env.SLACK_WEB_HOOKS}`
+          console.info(url)
+          const data = {
+            type: "mrkdwn",
+            text: `Forestone blogからのお問合せ \n 名前: ${values.firstName} \n メールアドレス${values.email} \n お問い合せ内容: ${values.message} \n `,
+          }
+          const xml = new XMLHttpRequest()
+          xml.open("POST", url, false)
+          xml.setRequestHeader(
+            "content-type",
+            "application/x-www-form-urlencoded;charset=UTF-8"
+          )
+          xml.send(`payload=${JSON.stringify(data)}`)
           actions.setSubmitting(false)
         }, 700)
       }}
@@ -110,6 +123,6 @@ const Contact: React.SFC<{}> = () => {
       )}
     />
   )
-}
+};
 
-export default Contact
+export default Contact;

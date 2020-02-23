@@ -24,9 +24,7 @@ export const SearchForm = styled.form`
     }
     @media (max-width: 990px) {
       font-size: 18px;
-    }
-    @media (max-width: 767px) {
-      font-size: 15px;
+      letter-spacing: 0.8px;
     }
   }
 `
