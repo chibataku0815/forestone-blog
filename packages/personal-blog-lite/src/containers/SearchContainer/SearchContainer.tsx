@@ -1,16 +1,15 @@
-import React, { useReducer, useEffect } from "react"
-import SearchReducer, { initialState } from "./SearchReducer"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
+import React, { useEffect, useReducer } from "react"
 import { Scrollbars } from "react-custom-scrollbars"
-import { rebuildIndex } from "./SearchIndexBuilderFunction"
 import PostList from "../../components/PostList/postList"
 import {
-  SearchWrapper,
+  NoResult,
   SearchForm,
   SearchResult,
-  NoResult,
-  SearchResultContainer,
+  SearchWrapper,
 } from "./SearchContainer.style"
+import { rebuildIndex } from "./SearchIndexBuilderFunction"
+import SearchReducer, { initialState } from "./SearchReducer"
 
 function Search() {
   const [state, dispatch] = useReducer(SearchReducer, initialState)
@@ -24,7 +23,7 @@ function Search() {
               slug
             }
             frontmatter {
-              date(formatString: "MMMM D, YYYY")
+              date(formatString: "YYYY.MM.D")
               title
               description
               tags

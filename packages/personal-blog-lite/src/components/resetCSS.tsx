@@ -19,7 +19,6 @@ const ResetCSS = createGlobalStyle`
   }
 
   html,
-  html a,
   h1,
   h2,
   h3,
@@ -73,6 +72,8 @@ const ResetCSS = createGlobalStyle`
   }
 
   a {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     text-decoration: none;
     box-shadow: none;
   }

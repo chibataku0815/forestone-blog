@@ -1,12 +1,13 @@
 import React from "react"
+import ScrollToTop from "react-scroll-up"
 import Sticky from "react-stickynode"
 import { ThemeProvider } from "styled-components"
-import ScrollToTop from "react-scroll-up"
-import Navbar from "./Navbar/Navbar"
-import Footer from "./Footer/Footer"
-import ScrollUpButton from "./ScrollUpButton/ScrollUpButton"
-import ResetCss from "./resetCSS"
 import { theme } from "../theme"
+import Footer from "./Footer/Footer"
+import GlobalCSS from "./globalCSS"
+import Navbar from "./Navbar/Navbar"
+import ResetCss from "./resetCSS"
+import ScrollUpButton from "./ScrollUpButton/ScrollUpButton"
 
 type LayoutProps = {
   children: React.ReactNode
@@ -17,6 +18,7 @@ const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
     <ThemeProvider theme={theme}>
       <>
         <ResetCss />
+        <GlobalCSS />
         <Sticky top={0} innerZ={9999} activeClass="nav-sticky">
           <Navbar />
         </Sticky>

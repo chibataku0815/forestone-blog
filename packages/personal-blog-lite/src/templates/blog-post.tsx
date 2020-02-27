@@ -1,34 +1,34 @@
-import React from "react"
+import { DiscussionEmbed } from "disqus-react"
 import { graphql, Link } from "gatsby"
 import _ from "lodash"
-import urljoin from "url-join"
-import { DiscussionEmbed } from "disqus-react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import PostCard from "../components/PostCard/postCard"
-import PostDetails from "../components/PostDetails/postDetails"
-import {
-  FacebookShareButton,
-  TwitterShareButton,
-  PinterestShareButton,
-  RedditShareButton,
-} from "react-share"
+import React from "react"
 import {
   IoLogoFacebook,
-  IoLogoTwitter,
   IoLogoPinterest,
   IoLogoReddit,
+  IoLogoTwitter,
 } from "react-icons/io"
 import {
+  FacebookShareButton,
+  PinterestShareButton,
+  RedditShareButton,
+  TwitterShareButton,
+} from "react-share"
+import urljoin from "url-join"
+import Layout from "../components/layout"
+import PostCard from "../components/PostCard/postCard"
+import PostDetails from "../components/PostDetails/postDetails"
+import SEO from "../components/seo"
+import {
+  BlogPostComment,
   BlogPostDetailsWrapper,
-  RelatedPostWrapper,
-  RelatedPostItems,
-  RelatedPostTitle,
-  RelatedPostItem,
   BlogPostFooter,
   PostShare,
   PostTags,
-  BlogPostComment,
+  RelatedPostItem,
+  RelatedPostItems,
+  RelatedPostTitle,
+  RelatedPostWrapper,
 } from "./templates.style"
 
 const BlogPostTemplate = (props: any) => {
@@ -146,7 +146,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
-        date(formatString: "DD MMM, YYYY")
+        date(formatString: "YYYY.MM.D")
         description
         tags
         cover {

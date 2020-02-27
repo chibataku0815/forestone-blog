@@ -88,7 +88,7 @@ const SEO: React.FunctionComponent<SEOProps> = ({
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `ja`,
   meta: [],
   keywords: [],
   description: ``,

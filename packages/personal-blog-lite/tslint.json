@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-airbnb",
+    "tslint-config-prettier"
+  ],
+  "jsRules": {},
+  "rulesDirectory": [],
+  "rules": {
+    "semicolon": [true, "never"],
+    "no-unused-variable": [true, "never"],
+  }
+}

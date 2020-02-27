@@ -19,6 +19,7 @@ module.exports = {
     //     },
     //   },
     // },
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
@@ -89,9 +90,19 @@ module.exports = {
       resolve: `gatsby-plugin-sharp`,
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: `G-0ENG0MYHS0`,
+        trackingIds: ['G-0ENG0MYHS0D', 'UA-223352435'],
+        gtagConfig: {
+          optimize_id: 'OPT_CONTAINER_ID',
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: false,
+          respectDNT: true,
+          exclude: ['/preview/**', '/do-not-track/me/too/'],
+        },
       },
     },
     {
