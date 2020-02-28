@@ -5,7 +5,7 @@ const GlobalCSS = createGlobalStyle`
   position: relative;
   top: -3px;
   padding: 6px 9px;
-  margin: 0 5px;
+  margin: 10px;
   background: #EFF0F2;
   border-radius: 4px;
   border-top: 1px solid whitesmoke;

@@ -17,6 +17,11 @@ const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <>
+        <script
+          data-ad-client="pub-4481502722215803"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        />
         <ResetCss />
         <GlobalCSS />
         <Sticky top={0} innerZ={9999} activeClass="nav-sticky">

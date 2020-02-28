@@ -2,7 +2,7 @@
 title: This could be another section
 date: '2019-05-25'
 tags: ['react', 'code', 'markdown']
-cover: './preview.jpg'
+cover: '../../assets/preview.png'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac urna diam. Nullam urna felis, porttitor quis nulla ut, tincidunt cursus tellus. Nunc ac tempus ante. Ut sagittis urna in enim mollis fringilla. Suspendisse sit amet porttitor sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent vitae lacus dapibus, fringilla orci in, iaculis sem. Morbi at tempus eros, at tincidunt quam. Nam a lacinia felis. Mauris nibh mi, fermentum vitae diam in, commodo lacinia purus. Pellentesque quis mi bibendum, mattis mauris nec, molestie est.

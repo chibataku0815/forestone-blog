@@ -2,7 +2,7 @@
 title: React-Live & Code example
 date: '2019-05-26'
 tags: ['js', 'code', 'react']
-cover: './preview.jpg'
+cover: '../../assets/preview.png'
 ---
 
 There are a few cases where it might make sense to modify the “back” button’s behavior. For example, if you build a page where you choose something, then see an “are you sure?” page to make sure it’s what you really wanted, and finally see a confirmation page, it may be desirable to skip the “are you sure?” page if the “back” button is clicked.

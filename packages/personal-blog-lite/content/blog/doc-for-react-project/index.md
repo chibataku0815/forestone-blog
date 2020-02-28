@@ -2,7 +2,7 @@
 title: Documentation for React Projects
 date: '2019-05-24'
 tags: ['javascript', 'markdown']
-cover: './preview.jpg'
+cover: '../../assets/preview.png'
 ---
 
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas congue venenatis odio a commodo. Praesent semper turpis tincidunt urna vestibulum, et rutrum sem porta. Curabitur varius, purus sit amet consequat rhoncus, dolor arcu rhoncus nibh, quis porta ex metus vehicula mi. Nunc pellentesque cursus enim, et bibendum ex varius id. Sed fringilla lacus metus, a condimentum felis suscipit in. Praesent dictum lorem ut ex facilisis, at facilisis justo vulputate. Suspendisse mollis magna augue, vitae imperdiet tellus efficitur sit amet. Morbi hendrerit iaculis ante sed semper. Suspendisse nunc ante, condimentum egestas tincidunt vel, vehicula sed enim. Vestibulum dictum ut orci id fringilla. Nullam et mi porta, pretium nisl ut, porta neque. Mauris hendrerit nibh non diam semper consequat. Ut vel sollicitudin ex. Fusce a tortor eget lacus mattis volutpat et rutrum elit. In sollicitudin varius ornare.

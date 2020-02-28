@@ -44,6 +44,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          'gatsby-remark-bracketed-spans',
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -89,22 +90,37 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sharp`,
     },
+    // {
+    //   resolve: `gatsby-plugin-google-gtag`,
+    //   options: {
+    //     trackingIds: ["G-H21B3QHS1P"],
+    //     head: true,
+    //     anonymize: true,
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: `gatsby-plugin-google-adsense`,
       options: {
-        trackingIds: ['G-0ENG0MYHS0D', 'UA-223352435'],
-        gtagConfig: {
-          optimize_id: 'OPT_CONTAINER_ID',
-          anonymize_ip: true,
-          cookie_expires: 0,
-        },
-        pluginConfig: {
-          head: false,
-          respectDNT: true,
-          exclude: ['/preview/**', '/do-not-track/me/too/'],
-        },
+        publisherId: `pub-4481502722215803`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `G-H21B3QHS1P`,
+      },
+    },
+    // {
+    //   resolve: `gatsby-plugin-gtag`,
+    //   options: {
+    //     // your google analytics tracking id
+    //     trackingId: `G-H21B3QHS1P`,
+    //     // Puts tracking script in the head instead of the body
+    //     head: false,
+    //     // enable ip anonymization
+    //     anonymize: true,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-feed`,
     },
