@@ -1,7 +1,7 @@
+import { graphql, useStaticQuery } from "gatsby"
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import PostCardMinimal from "../../../components/PostCardMinimal/postCardMinimal"
 import Pagination from "../../../components/Pagination/pagination"
+import PostCardMinimal from "../../../components/PostCardMinimal/postCardMinimal"
 import BlogPostsWrapper, { SecTitle } from "./style"
 
 type PostsProps = {}
@@ -29,7 +29,7 @@ const Posts: React.FunctionComponent<PostsProps> = props => {
         totalCount
         edges {
           node {
-            excerpt(pruneLength: 300)
+            excerpt(pruneLength: 100)
             fields {
               slug
             }

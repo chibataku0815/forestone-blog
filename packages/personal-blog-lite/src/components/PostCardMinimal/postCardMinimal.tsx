@@ -1,17 +1,17 @@
-import * as React from "react"
 import { Link } from "gatsby"
-import _ from "lodash"
 import Img from "gatsby-image"
+import _ from "lodash"
+import * as React from "react"
 import {
-  PostCardWrapper,
-  PostPreview,
-  PostDetails,
-  PostDate,
-  PostTitle,
   Excerpt,
+  PostCardWrapper,
   PostContent,
-  PostTags,
+  PostDate,
   PostDateAndPreview,
+  PostDetails,
+  PostPreview,
+  PostTags,
+  PostTitle,
   ReadMore,
 } from "./postCardMinimal.style"
 

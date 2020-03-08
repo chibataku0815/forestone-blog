@@ -1,4 +1,3 @@
-import { DiscussionEmbed } from "disqus-react"
 import { graphql, Link } from "gatsby"
 import _ from "lodash"
 import React from "react"
@@ -20,7 +19,6 @@ import PostCard from "../components/PostCard/postCard"
 import PostDetails from "../components/PostDetails/postDetails"
 import SEO from "../components/seo"
 import {
-  BlogPostComment,
   BlogPostDetailsWrapper,
   BlogPostFooter,
   PostShare,
@@ -96,11 +94,11 @@ const BlogPostTemplate = (props: any) => {
             </RedditShareButton>
           </PostShare>
         </BlogPostFooter>
-        <BlogPostComment
+        {/* <BlogPostComment
           className={post.frontmatter.cover == null ? "center" : ""}
         >
           <DiscussionEmbed {...disqusConfig} />
-        </BlogPostComment>
+        </BlogPostComment> */}
       </BlogPostDetailsWrapper>
 
       {edges.length !== 0 && (
