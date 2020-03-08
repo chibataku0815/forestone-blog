@@ -2274,6 +2274,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-stickynode@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@types/react-stickynode/-/react-stickynode-2.1.0.tgz#82868b4061798244ff2867f048b58fd36e90c1e0"
+  integrity sha512-mncJztUMmoTdRL81ALL3tmOCTbeSgWF0RcAoQ8aHJ5N/s7B7ntjVXHZV5UowWMMMG18w5eOJSIJryf8Cy3enGQ==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*", "@types/react@^16.4.16":
   version "16.9.22"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.22.tgz#f0288c92d94e93c4b43e3f5633edf788b2c040ae"
