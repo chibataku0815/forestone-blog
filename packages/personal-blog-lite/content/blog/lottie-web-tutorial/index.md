@@ -30,23 +30,24 @@ cover: './thumnail.png'
 
 [Parcel](https://parceljs.org/)という設定不要な Web アプリケーションバンドラーを使用します。
 
-```js
-yarn global add parcel-bundler
-```
-
 npm でも yarn でもどちらも同じなので好みでグルーバルインストールします。
 
 ```js
-yarn init -y
+yarn global add parcel-bundler
 ```
 
 あとは Package.json を作成すればいいので楽ちんです。
 
 ```js
-parcel index.html
+yarn init -y
 ```
 
 index.html というファイルをビルドしたければ以下のようにコマンド叩けばローカルサーバーが立ち上がります。
+
+```js
+parcel index.html
+```
+
 あとは、必要なファイルを適切に作成してしていけばオッケーなので動画と[サンプルの Github リポジトリ](https://github.com/chibataku0815/simple-lottie-web-example)を参考ください。
 
 #### 3. [つまづきポイント]{#anchor3}
