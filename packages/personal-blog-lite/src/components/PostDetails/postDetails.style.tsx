@@ -131,7 +131,6 @@ export const PostDescription = styled.div`
   h4,
   h5,
   h6 {
-    font-weight: 500;
     margin-bottom: 0.75em;
   }
 
