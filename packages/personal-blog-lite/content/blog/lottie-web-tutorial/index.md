@@ -1,8 +1,8 @@
 ---
 title: After Effectsで作成したシェイプ アニメーションをweb実装出来るLottie-webを試してみる備忘録
-date: '2020-03-09T22:12:03.284Z'
-tags: ['aftereffects', 'tutorial', 'lottie', 'アニメーション']
-cover: './thumnail.png'
+date: "2020-03-09T22:12:03.284Z"
+tags: ["aftereffects", "tutorial", "lottie", "アニメーション"]
+cover: "./thumnail.png"
 ---
 
 ## 作業工程動画
@@ -30,13 +30,13 @@ cover: './thumnail.png'
 
 [Parcel](https://parceljs.org/)という設定不要な Web アプリケーションバンドラーを使用します。
 
-npm でも yarn でもどちらも同じなので好みでグルーバルインストールします。
+npm でも yarn でも大きくは変わらないので好みでグルーバルインストールします。
 
 ```js
 yarn global add parcel-bundler
 ```
 
-あとは Package.json を作成すればいいので楽ちんです。
+あとは Package.json を作成すればすぐローカル環境を作れるので楽ちんです。
 
 ```js
 yarn init -y
@@ -48,7 +48,7 @@ index.html というファイルをビルドしたければ以下のようにコ
 parcel index.html
 ```
 
-あとは、必要なファイルを適切に作成してしていけばオッケーなので動画と[サンプルの Github リポジトリ](https://github.com/chibataku0815/simple-lottie-web-example)を参考ください。
+あとは、必要なファイルを適切に作成してしていけばオッケーです。動画と[サンプルの Github リポジトリ](https://github.com/chibataku0815/simple-lottie-web-example)を参考ください。
 
 #### 3. [つまづきポイント]{#anchor3}
 
@@ -59,10 +59,10 @@ parcel index.html
 ```js
 lottie.loadAnimation({
   container: element, // the dom element that will contain the animation
-  renderer: 'svg',
+  renderer: "svg",
   loop: true,
   autoplay: true,
-  path: 'data.json', // the path to the animation json
+  path: "data.json", // the path to the animation json
 })
 ```
 
