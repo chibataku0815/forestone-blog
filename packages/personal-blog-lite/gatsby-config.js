@@ -44,6 +44,12 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              target: '_blank',
+            },
+          },
           'gatsby-remark-bracketed-spans',
           {
             resolve: `gatsby-remark-images`,
@@ -55,7 +61,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+              wrapperStyle: `margin-bottom: 1.5725rem`,
             },
           },
           {

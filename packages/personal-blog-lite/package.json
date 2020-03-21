@@ -28,6 +28,7 @@
     "gatsby-plugin-webfonts": "^1.1.2",
     "gatsby-remark-bracketed-spans": "^2.0.3",
     "gatsby-remark-copy-linked-files": "^2.0.11",
+    "gatsby-remark-external-links": "^0.0.4",
     "gatsby-remark-images": "^2.0.6",
     "gatsby-remark-katex": "^3.0.4",
     "gatsby-remark-mermaid": "^1.0.0",
