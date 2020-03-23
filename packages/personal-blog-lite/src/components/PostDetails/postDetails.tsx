@@ -1,15 +1,15 @@
-import * as React from "react"
-import Img from "gatsby-image"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 import _ from "lodash"
+import * as React from "react"
 import {
-  PostDetailsWrapper,
-  PostTitle,
   PostDate,
-  PostPreview,
-  PostDescriptionWrapper,
   PostDescription,
+  PostDescriptionWrapper,
+  PostDetailsWrapper,
+  PostPreview,
   PostTags,
+  PostTitle,
 } from "./postDetails.style"
 
 type PostDetailsProps = {

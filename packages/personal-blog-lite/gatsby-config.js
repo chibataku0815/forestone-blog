@@ -8,24 +8,9 @@ module.exports = {
     author: `Chiba Takumi`,
     about: `株式会社Forestone 代表取締役社長/フロントエンジニア/デザイナー 全く別軸で移動販売車を購入してカフェを始めました。「Cafe More」というお店です。1号店・2号店絶賛営業中。趣味は音楽で、朝まで踊れる程度には好きです。DJも、たまにやります`,
     description: `デザイン・プログラミング・ガジェット・動画編集など雑多に忘備録`,
-    siteUrl: `https://blog.fores-tone.co.jp`,
+    siteUrl: `https://fores-tone.co.jp`,
   },
   plugins: [
-    // {
-    //   resolve: "gatsby-plugin-web-font-loader",
-    //   options: {
-    //     google: {
-    //       families: ["Noto+Sans+JP:100,300,400,500,700,900", "Material+Icons"],
-    //     },
-    //   },
-    // },
-    `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        minify: true, // Breaks styles if not set to false
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -112,22 +97,23 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-gtag`,
       options: {
+        // your google analytics tracking id
         trackingId: `G-H21B3QHS1P`,
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // enable ip anonymization
+        anonymize: false,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-gtag`,
-    //   options: {
-    //     // your google analytics tracking id
-    //     trackingId: `G-H21B3QHS1P`,
-    //     // Puts tracking script in the head instead of the body
-    //     head: false,
-    //     // enable ip anonymization
-    //     anonymize: true,
-    //   },
-    // },
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        minify: true, // Breaks styles if not set to false
+      },
+    },
     {
       resolve: `gatsby-plugin-feed`,
     },

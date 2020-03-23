@@ -41,11 +41,19 @@ const BlogPostTemplate = (props: any) => {
     shortname: process.env.DISQUS_NAME,
     config: { identifier: slug, title },
   }
+
+  console.info(post.frontmatter.cover.publicURL)
   return (
     <Layout>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        meta={[
+          {
+            name: `og:image`,
+            content: post.frontmatter.cover.publicURL,
+          },
+        ]}
       />
       <BlogPostDetailsWrapper>
         <PostDetails

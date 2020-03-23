@@ -21,15 +21,15 @@ cover: './thumnail.png'
 
 第一回目は、バックエンド側で Firebase Functions を使用して Graphql サーバーを構築していきたいと思います。
 
-<!-- ## 作業工程動画
+## 作業工程動画
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/b8Uwb0fRyG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=KFBrOxuBII8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 作業工程
 
 1. [Firebase プロジェクトを作成・ローカルディレクトリと接続する](#anchor1)
 1. [Nestjs で Graphql サーバーを構築する](#anchor2)
-1. [ローカルプロジェクトと Firebase Functions を接続](#anchor3)
+1. [Graphql サーバーと Firebase Functions を接続](#anchor3)
 1. [Code](#anchor4)
 
 ### 1. [Firebase プロジェクトを作成・ローカルディレクトリと接続する]{#anchor1}
@@ -38,13 +38,13 @@ cover: './thumnail.png'
 firebase のコマンドラインを global にインストールします。
 
 ```js
-$ npm install -g firebase-tools
+npm install -g firebase-tools
 ```
 
 インストールが確認出来たら、ターミナルから firebase にログインします。
 
 ```js
-$ firebase login
+firebase login
 ```
 
 メールアドレスとパスワードを入力してログインします。
@@ -52,7 +52,7 @@ $ firebase login
 ログインが確認出来たら、ローカルのディレクトリを Firebase と接続します。
 
 ```js
-$ firebase init
+firebase init
 ```
 
 > ? Which Firebase CLI features do you want to set up for this folder? Press Space to select features, then Enter to confirm your choice
@@ -71,21 +71,21 @@ $ firebase init
 Nestjs のコマンドラインを[ドキュメントサイト](https://docs.nestjs.com/)を参考にインストールします。
 
 ```js
-$ npm i -g @nestjs/cli
+npm i -g @nestjs/cli
 ```
 
 一度、現状の `/functions` ディレクトリを削除して Nestjs のコマンドラインでプロジェクトを作成します。
 
 ```
-$ rm -rf functions
-$ nest new functions
+rm -rf functions
+nest new functions
 ```
 
 Nestjs で Graphql 使用するために必要なパッケージをインストールします。
 
 ```
-$ cd functions
-$ npm i --save @nestjs/graphql graphql-tools graphql apollo-server-express type-graphql
+cd functions
+npm i --save @nestjs/graphql graphql-tools graphql apollo-server-express type-graphql
 ```
 
 Graphql を使用するためにメインモジュールを初期化します.
@@ -114,12 +114,12 @@ resolver を作成します　[Code](https://github.com/chibataku0815/angualr-ty
 nest generate resolver users
 ```
 
-### 3. [ローカルプロジェクトと Firebase Functions を接続]{#anchor3}
+### 3. [Graphql サーバーと Firebase Functions を接続]{#anchor3}
 
 接続に必要なパッケージをインストールします。
 
 ```
-$ npm i --save firebase-admin firebase-functions
+npm i --save firebase-admin firebase-functions
 ```
 
 エントリーポイントを変更する必要があるので、いくつかファイル作成・修正します。
@@ -135,11 +135,11 @@ Firebase のエントリーポイントを [Package.json](https://github.com/chi
 コードをコンパイルして動作を確認します。
 
 ```javascript
-$ npm run build
+npm run build
 ```
 
 ```javascript
-$ firebase serve --only functions
+firebase serve --only functions
 ```
 
 localhost で Play graoud で表示・動作確認します。
@@ -147,7 +147,7 @@ localhost で Play graoud で表示・動作確認します。
 あとは、デプロイするだけです。
 
 ```javascript
-$ firebase deploy --only functions
+firebase deploy --only functions
 ```
 
 #### 4. [Code]{#anchor4}
