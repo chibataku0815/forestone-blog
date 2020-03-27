@@ -74,7 +74,18 @@ angular-apollo コマンドで使用することで依存パッケージや Grap
 ng add apollo-angular
 ```
 
-取得する GraphQL エンドポイントを追加します。
+環境変数 gitignore に追加した上で、必要な情報を記載します。
+
+[.gitignore](https://github.com/chibataku0815/angular-typescript-nest-graphql/blob/frontend-tutorial00/.gitignore)
+
+```js
+export const environment = {
+  production: false,
+  graphqlUri: 'GraphQLのエンドポイント',
+}
+```
+
+取得する GraphQL エンドポイントを環境変数で追加します。
 
 [frontend/src/app/graphql.module.ts](https://github.com/chibataku0815/angular-typescript-nest-graphql/blob/frontend-tutorial00/frontend/src/app/graphql.module.ts)
 
