@@ -25,21 +25,20 @@ cover: './thumnail.png'
 
 1. [Ionic をローカルプロジェクトとして構築する](#anchor1)
 1. [GraphQL 接続してみる](#anchor2)
-1. [Graphql サーバーと Firebase Functions を接続](#anchor3)
-1. [Code](#anchor4)
+1. [Code](#anchor3)
 
 ### 1. [Ionic をローカルプロジェクトとして構築する]{#anchor1}
 
 Ionic のコマンドラインを global にインストールします。
 
 ```js
-$ npm i -g ionic
+npm i -g ionic
 ```
 
 次は Ionic のコマンドラインを使ってプロジェクトを作成します
 
 ```js
-$ ionic start --type=angular
+ionic start --type=angular
 ```
 
 プロジェクト名など聞かれますので任意の名前入力したり、選択したりします。
@@ -49,20 +48,20 @@ $ ionic start --type=angular
 プロジェクトに移動して動作を確認します。
 
 ```js
-$ cd frontend
-$ ionic serve
+cd frontend
+ionic serve
 ```
 
 angular のコマンドラインも使用するので、global にインストールします。
 
 ```js
-$ npm install -g @angular/cli
+npm install -g @angular/cli
 ```
 
 angular を最新のバージョンにアップデートします。
 
 ```js
-$ ng update @angular/cli @angular/core
+ng update @angular/cli @angular/core
 ```
 
 ### 2. [GraphQL 接続してみる]{#anchor2}
@@ -87,13 +86,13 @@ export const environment = {
 
 取得する GraphQL エンドポイントを環境変数で追加します。
 
-[frontend/src/app/graphql.module.ts](https://github.com/chibataku0815/angular-typescript-nest-graphql/blob/frontend-tutorial00/frontend/src/app/graphql.module.ts)
+[frontend/src/app/graphql.module.ts](https://github.com/chibataku0815/angular-typescript-nest-graphql/tree/master/frontend/src/app/graphql.module.ts)
 
 最後に GraphQL からの値を取得・表示できるかテストします。
 
-[frontend/src/app/home/home.module.html](https://github.com/chibataku0815/angular-typescript-nest-graphql/blob/frontend-tutorial00/frontend/src/app/home/home.module.ts)
+[frontend/src/app/home/home.module.html](https://github.com/chibataku0815/angular-typescript-nest-graphql/tree/master/frontend/src/app/home/home.module.ts)
 
-[frontend/src/app/home/home.page.ts](https://github.com/chibataku0815/angular-typescript-nest-graphql/blob/frontend-tutorial00/frontend/src/app/home/home.page.ts)
+[frontend/src/app/home/home.page.ts](https://github.com/chibataku0815/angular-typescript-nest-graphql/tree/master/frontend/src/app/home/home.page.ts)
 
 太郎・次郎・三郎などと name が表示出来ていれば、オッケーです。
 
