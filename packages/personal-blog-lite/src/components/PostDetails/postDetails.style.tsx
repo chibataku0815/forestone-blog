@@ -3,6 +3,8 @@ import { themeGet } from "styled-system"
 
 export const PostDetailsWrapper = styled.div`
   position: relative;
+  max-width: 100%;
+  overflow: hidden;
 
   &.image_left {
     @media (min-width: 991px) {
