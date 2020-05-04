@@ -1,5 +1,5 @@
 ---
-title: Ionic-angularでGraphQLを取得する / ionicを使用したhybridなアプリを開発するチュートリアル02
+title: Ionic-angularでGraphQLデータを取得する / ionicを使用したhybridなアプリを開発する忘備録02
 date: '2020-03-25T22:12:03.284Z'
 tags:
   [
@@ -17,9 +17,9 @@ cover: './thumnail.png'
 
 第 2 回目は、フロントエンド側で ionic v4(angular) を構築して Graphql で値を取得していきたいと思います。
 
-<!-- ## 作業工程動画
+## 作業工程動画
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KFBrOxuBII8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6HByZjV5D-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 作業工程
 

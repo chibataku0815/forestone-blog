@@ -1,5 +1,5 @@
 ---
-title: Firebaseでgraphqlサーバーを構築する（NestJS）Typescript / ionicを使用したhybridなアプリを開発するチュートリアル01
+title: Firebaseでgraphqlサーバーを構築する(NestJS) /  ionicを使用したhybridなアプリを開発する忘備録01
 date: '2020-03-19T22:12:03.284Z'
 tags:
   [
