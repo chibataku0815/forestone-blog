@@ -7,8 +7,6 @@ cover: './thumnail.png'
 
 ロゴアイディアを制作チュートリアル動画と共にとしてまとめて行きたいと思います。(備忘録)
 
-<!-- <!-- ## 作業工程動画 -->
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/v8wbZsQDdHk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 ## 今回の作成の要点

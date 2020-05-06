@@ -7,26 +7,31 @@ cover: './thumnail.png'
 
 個人的な備忘録
 
-<!-- ## 作業工程動画
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KFBrOxuBII8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-
 ## 作業工程
 
+1. [ショートカット](#anchor0)
 1. [シェイプ形成](#anchor1)
 1. [グローバルスウォッチを設定](#anchor1)
 
 <!-- 1. [長方形グリッド](#anchor2)
 1. [ブレンドツール](#anchor3) -->
 
-### 1. [シェイプ形成ツール]{#anchor1}
+### [ショートカット](#anchor0)
+
+| ツール     | キー                |
+| ---------- | ------------------- |
+| 拡大・縮小 | [s] {.shortcut-btn} |
+| 長方形     | [m] {.shortcut-btn} |
+| 楕円形     | [l] {.shortcut-btn} |
+
+### [シェイプ形成ツール]{#anchor1}
 
 | 機能                   | キー                                                            |
 | ---------------------- | --------------------------------------------------------------- |
 | シェイプ形成ツール切替 | [Shift] {.shortcut-btn} + [M]　{.shortcut-btn}                  |
 | 選択したシェイプ削除   | シェイプ形成ツールを選択している状態で　[option]{.shortcut-btn} |
 
-### 2. [グローバルスウォッチを設定]{#anchor2}
+### [グローバルスウォッチを設定]{#anchor2}
 
 設定したいカラーを選択し、スウォッチオプションを押下し、グローバルにチェックをいれる
 
